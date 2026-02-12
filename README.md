@@ -21,3 +21,39 @@ The system provides a RESTful API for managing user reports, tracking issue stat
 - **Database:** MongoDB (with Mongoose)
 - **Authentication:** Firebase Admin SDK, JWT
 - **Other:** CORS, Cookie Parser, Dotenv
+
+## Installation and Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone <repository-url>
+   cd server
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   - Create a `.env` file in the root directory.
+   - Copy the contents of `.env.example` to `.env`.
+   - Update the values with your specific configuration (MongoDB URI, Firebase credentials, etc.).
+
+4. **Run the server:**
+   - **Development:**
+     ```bash
+     npx nodemon server.js
+     ```
+   - **Production:**
+     ```bash
+     node server.js
+     ```
+
+## API Endpoints
+
+- `GET /`: Health check
+- `/issues`: Issue management
+- `/users`: User management
+- `/payments`: Payment processing
+- `/stats`: System statistics
